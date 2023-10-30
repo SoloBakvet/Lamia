@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "lamia",
+  "version": "${version}",
+  "name": "Lamia",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Stijn/Lamia"
+  },
+  "license": "MIT",
+  "icon": "assets/lamia/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.doomednoctis.lamia.client.LamiaClient"
+    ],
+    "main": [
+      "net.doomednoctis.lamia.Lamia"
+    ],
+    "cardinal-components": [
+      "net.doomednoctis.lamia.common.registry.LamiaComponentRegistry"
+    ]
+  },
+  "mixins": [
+    "lamia.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "cardinal-components": [
+      "lamia:vampirism"
+    ]
+  }
+}
