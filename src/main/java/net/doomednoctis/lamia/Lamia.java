@@ -3,6 +3,7 @@ package net.doomednoctis.lamia;
 import com.mojang.brigadier.Command;
 import net.doomednoctis.lamia.api.LamiaAPI;
 import net.doomednoctis.lamia.common.registry.LamiaEffectRegistry;
+import net.doomednoctis.lamia.common.registry.LamiaItemRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.command.argument.EntityArgumentType;
@@ -40,6 +41,7 @@ public class Lamia implements ModInitializer {
         });
 
         LamiaEffectRegistry.registerEffects();
+        LamiaItemRegistry.registerItems();
 
     }
 }
